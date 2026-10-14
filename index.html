@@ -4,10 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hero Section of My Landing</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+    />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <!-- Structural tags are: section, div, nav, header, footer, article, span-->
+    <!-- Structural tags are: section, div, nav, header, footer -->
     <section class="hero">
       <div class="container">
         <div class="column">
@@ -15,34 +20,47 @@
             <h1>Shaping Digital Realities</h1>
             <div class="badge">
               <img
-                src="images/Badge.svg"
-                alt="badge with this text:Push boundaries · Break rules"
+                src="images/badge.svg"
+                alt="badge with this text: Push boundaries • Break rules"
               />
             </div>
           </div>
-          <p>
-            A new media creator turning abstract concepts into immersive visual
-            systems. Specializing in next-gen aesthetics, spatial computing
-            concepts, and forward-thinking UI.
-          </p>
-          <a href="https://www.eram.cat/ca/" target="_blank">See them Magic</a>
+          <div class="text">
+            <p>
+              A new media creator turning abstract concepts into immersive
+              visual systems. Specializing in next-gen aesthetics, spatial
+              computing concepts, and forward-thinking UI.
+            </p>
+            <a class="btn-text" href="https://www.eram.cat" target="_blank"
+              >See them Magic</a
+            >
+          </div>
           <div class="cards-wrapper">
             <div class="card">
-              <h2><i></i> Spatial Design</h2>
+              <div class="card-title">
+                <i class="fa-solid fa-heart"></i>
+                <h2>Spatial Design</h2>
+              </div>
               <p>
                 Prototyping augmented and virtual reality concepts for modern
                 web.
               </p>
             </div>
             <div class="card">
-              <h2><i></i> Creative Code</h2>
+              <div class="card-title">
+                <i class="fa-solid fa-star"></i>
+                <h2>Creative Code</h2>
+              </div>
               <p>
                 Bridging the gap between generative art and functional
                 algorithms.
               </p>
             </div>
             <div class="card">
-              <h2><i></i> Digital Art</h2>
+              <div class="card-title">
+                <i class="fa-solid fa-eye"> </i>
+                <h2>Digital Art</h2>
+              </div>
               <p>
                 Producing high-fidelity, scroll-stopping assets for digital
                 campaigns.
@@ -55,5 +73,139 @@
         </div>
       </div>
     </section>
+
+    <main>
+      <section class="selected-works" id="selected-works">
+        <div class="works-inner">
+          <div class="works-heading">
+            <div>
+              <p class="eyebrow">My footprint as an artist</p>
+              <h2>Selected <em class="works-accent">Works</em></h2>
+            </div>
+          </div>
+
+          <div class="projects-grid">
+            <div class="project-card">
+              <div class="project-art">
+                <img
+                  src="images/cmbyn.png"
+                  alt="Behind the scenes on the Call Me By Your Name short film"
+                />
+              </div>
+              <div class="project-copy">
+                <ul class="project-tags">
+                  <li class="project-year-tag">2026</li>
+                  <li>Short film</li>
+                  <li>Direction / production</li>
+                </ul>
+                <h3>Call Me By Your Name</h3>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <div class="project-art">
+                <img
+                  src="images/foot.png"
+                  alt="Water reflection, a photography course final project"
+                />
+              </div>
+              <div class="project-copy">
+                <ul class="project-tags">
+                  <li class="project-year-tag">2025</li>
+                  <li>Photography</li>
+                  <li>Course final project</li>
+                </ul>
+                <h3>Water Reflection</h3>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <div class="project-art project-art-photoshop">
+                <img
+                  class="project-image-rotated"
+                  src="images/Photoshop.png"
+                  alt="Rotated book cover mock-up"
+                />
+              </div>
+              <div class="project-copy">
+                <ul class="project-tags">
+                  <li class="project-year-tag">2025</li>
+                  <li>Graphic design</li>
+                  <li>Mock-up</li>
+                </ul>
+                <h3>Book Cover</h3>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <div class="project-art">
+                <img
+                  src="images/wes.png"
+                  alt="The Weekly Cut podcast episode graphic for local radio"
+                />
+              </div>
+              <div class="project-copy">
+                <ul class="project-tags">
+                  <li class="project-year-tag">2026</li>
+                  <li>Podcast episode</li>
+                  <li>Local radio</li>
+                </ul>
+                <h3>The Weekly Cut</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="works-more">
+            <p class="works-prompt">CURIOUS WHERE THESE IDEAS GO NEXT?</p>
+            <a
+              class="portfolio-button"
+              href="https://www.eram.cat/ca/"
+              target="_blank"
+            >
+              View More
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <footer class="contact-footer" id="contact">
+        <div class="footer-inner">
+          <div class="footer-topline">
+            <p class="eyebrow">Have an idea in mind?</p>
+          </div>
+          <div class="footer-main">
+            <div class="footer-quote">
+              <h2>
+                No bird soars too high,<br /><em class="quote-accent"
+                  >if he soars with his own wings.</em
+                >
+              </h2>
+              <p class="quote-attribution">William Blake</p>
+            </div>
+            <div class="footer-email-block">
+              <a class="footer-stamp" href="#selected-works">
+                <img
+                  class="footer-badge"
+                  src="images/badge.svg"
+                  alt="Push boundaries. Break rules."
+                />
+              </a>
+              <a class="email-link" href="mailto:hello@eram.cat"
+                >hello@eram.cat</a
+              >
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <nav class="social-links">
+              <a href="https://www.instagram.com/eueram/" target="_blank"
+                >Instagram</a
+              >
+              <a href="https://www.eram.cat/ca/" target="_blank">Behance</a>
+              <a href="https://www.eram.cat/ca/" target="_blank">GitHub</a>
+            </nav>
+          </div>
+        </div>
+      </footer>
+    </main>
   </body>
 </html>
