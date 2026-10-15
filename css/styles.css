@@ -118,7 +118,10 @@ h1 {
 }
 
 .card p {
-  font-family: Helvetica Neue, Helvetica, sans-serif;
+  font-family:
+    Helvetica Neue,
+    Helvetica,
+    sans-serif;
   font-size: 16px;
   font-weight: 300;
   line-height: 1.35;
@@ -177,7 +180,10 @@ h1 {
 }
 
 .eyebrow {
-  font-family: Helvetica Neue, Helvetica, sans-serif;
+  font-family:
+    Helvetica Neue,
+    Helvetica,
+    sans-serif;
   font-size: 13px;
   font-weight: 500;
   letter-spacing: 0;
@@ -205,7 +211,10 @@ h1 {
 .works-intro {
   max-width: 340px;
   padding-bottom: 8px;
-  font-family: Helvetica Neue, Helvetica, sans-serif;
+  font-family:
+    Helvetica Neue,
+    Helvetica,
+    sans-serif;
   font-size: 18px;
   line-height: 1.45;
 }
@@ -224,7 +233,9 @@ h1 {
   background: var(--white);
   border-radius: 28px;
   border: 1px solid rgb(51 51 51 / 12%);
-  transition: border-color 220ms ease, box-shadow 220ms ease;
+  transition:
+    border-color 220ms ease,
+    box-shadow 220ms ease;
 }
 
 .project-card:nth-child(even) {
@@ -292,7 +303,10 @@ h1 {
   color: rgb(51 51 51 / 72%);
   border: 1px solid rgb(51 51 51 / 22%);
   border-radius: 999px;
-  font-family: Helvetica Neue, Helvetica, sans-serif;
+  font-family:
+    Helvetica Neue,
+    Helvetica,
+    sans-serif;
   font-size: 11px;
   font-weight: 500;
   line-height: 1.2;
@@ -320,7 +334,10 @@ h1 {
   justify-content: space-between;
   gap: 24px;
   margin-top: 42px;
-  font-family: Helvetica Neue, Helvetica, sans-serif;
+  font-family:
+    Helvetica Neue,
+    Helvetica,
+    sans-serif;
   font-size: 15px;
 }
 
@@ -337,11 +354,16 @@ h1 {
   color: var(--white);
   background: var(--electric-orange);
   border-radius: 999px;
-  font-family: Helvetica Neue, Helvetica, sans-serif;
+  font-family:
+    Helvetica Neue,
+    Helvetica,
+    sans-serif;
   font-size: 17px;
   font-weight: 500;
   text-decoration: none;
-  transition: background-color 180ms ease, transform 180ms ease;
+  transition:
+    background-color 180ms ease,
+    transform 180ms ease;
 }
 
 .portfolio-button::after,
@@ -408,7 +430,10 @@ h1 {
 .quote-attribution {
   margin-top: 18px;
   color: rgb(250 239 227 / 72%);
-  font-family: Helvetica Neue, Helvetica, sans-serif;
+  font-family:
+    Helvetica Neue,
+    Helvetica,
+    sans-serif;
   font-size: 14px;
 }
 
@@ -419,7 +444,10 @@ h1 {
   gap: 16px;
   color: var(--light-orange);
   border-bottom: 1px solid rgb(250 239 227 / 50%);
-  font-family: Helvetica Neue, Helvetica, sans-serif;
+  font-family:
+    Helvetica Neue,
+    Helvetica,
+    sans-serif;
   font-size: 20px;
   text-decoration: none;
 }
@@ -444,7 +472,10 @@ h1 {
   align-items: center;
   justify-content: center;
   border-top: 1px solid rgb(250 239 227 / 24%);
-  font-family: Helvetica Neue, Helvetica, sans-serif;
+  font-family:
+    Helvetica Neue,
+    Helvetica,
+    sans-serif;
   font-size: 13px;
 }
 
@@ -489,62 +520,6 @@ h1 {
   transform: rotate(90deg);
 }
 
-@media (max-width: 900px) {
-  .hero {
-    padding: 40px 28px;
-  }
-
-  .heading-wrapper {
-    padding-top: 30px;
-  }
-
-  h1 {
-    font-size: clamp(58px, 10vw, 88px);
-    line-height: 0.94;
-  }
-
-  .column > img {
-    max-width: 100%;
-    height: auto;
-  }
-
-  .cards-wrapper {
-    flex-wrap: wrap;
-  }
-
-  .selected-works,
-  .contact-footer {
-    padding-right: 28px;
-    padding-left: 28px;
-    margin-right: 16px;
-    margin-left: 16px;
-    border-radius: 28px;
-  }
-
-  .works-heading h2 {
-    font-size: 72px;
-  }
-
-  .project-art {
-    height: 300px;
-    min-height: 0;
-  }
-
-  .project-art .project-image-rotated {
-    height: 100cqw;
-  }
-
-  .project-copy {
-    padding: 32px;
-  }
-
-  .footer-main {
-    align-items: flex-start;
-    flex-direction: column;
-  }
-
-}
-
 @media (max-width: 600px) {
   .hero {
     padding: 26px 20px 44px;
@@ -570,6 +545,13 @@ h1 {
   h1 {
     font-size: clamp(54px, 15vw, 76px);
     line-height: 0.9;
+  }
+
+  .column > img {
+    display: block;
+    width: 100%;
+    max-height: 520px;
+    object-fit: contain;
   }
 
   .text {
@@ -635,6 +617,7 @@ h1 {
 
   .project-art {
     width: 100%;
+    height: 300px;
     min-height: 0;
     aspect-ratio: 4 / 3;
     flex-basis: auto;
@@ -674,6 +657,8 @@ h1 {
   }
 
   .footer-main {
+    align-items: flex-start;
+    flex-direction: column;
     padding: 48px 0 40px;
   }
 
